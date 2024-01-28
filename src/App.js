@@ -12,7 +12,9 @@ function App() {
     secondaryColor: "#00dfa2",
     background: "#F1F6F9",
     heading: "Thynk <i>Unlimited</i>",
-    logo: (props) => <Logo {...props} topColor="#394867" bottomColor="#fff" />,
+    logo: (props) => (
+      <Logo {...props} topColor="#394867" bottomColor="#00dfa2" />
+    ),
     contact: "@reallygreatsite",
     link: "www.reallygreatsite.com",
 
