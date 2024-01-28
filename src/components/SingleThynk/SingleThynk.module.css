@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
 }
 
 .textWrapper {
@@ -32,7 +33,6 @@
   grid-template-columns: auto 1fr;
   align-items: end;
   gap: 40px 30px;
-  padding: 150px 0;
 }
 .id {
   font-size: 300px;
@@ -89,4 +89,14 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+}
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .wrapper {
+    padding: 20px 0;
+  }
 }
