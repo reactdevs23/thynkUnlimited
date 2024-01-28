@@ -8,7 +8,7 @@ const TopWave = ({ color }) => {
         transform: "rotate(180deg)",
         transition: ".3s",
       }}
-      viewBox="0 0 1440 240"
+      viewBox="0 0 1440 230"
     >
       <defs>
         <linearGradient id="a" x1={1} x2={0} y1={0} y2={0}>
