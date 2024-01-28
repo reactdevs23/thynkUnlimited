@@ -1,0 +1,91 @@
+.mainWrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+}
+
+.bottomWave {
+  position: absolute;
+  bottom: -5px;
+
+  z-index: -1;
+  width: 100vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textWrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: end;
+  gap: 40px 30px;
+  padding: 150px 0;
+}
+.id {
+  font-size: 300px;
+  line-height: 83%;
+  text-align: right;
+
+  /* Define the background color gradient */
+  background: linear-gradient(
+    180deg,
+    var(--primaryColor) 0%,
+    var(--secondaryColor) 20%,
+
+    var(--secondaryColor) 60%,
+    var(--primaryColor) 100%
+  );
+
+  -webkit-background-clip: text;
+  color: transparent; /* Adjust the opacity as needed */
+}
+.title {
+  font-family: var(--headerFontFamily);
+  font-size: 80px;
+  line-height: 110%;
+  color: var(--primaryColor);
+}
+.info {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  line-height: 140%;
+}
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: -15px;
+}
+.list {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primaryColor);
+  line-height: 140%;
+
+  position: relative;
+  padding-left: 50px;
+}
+.list::before {
+  content: "";
+  background: var(--secondaryColor);
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}

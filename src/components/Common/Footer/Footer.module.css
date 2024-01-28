@@ -1,0 +1,31 @@
+.bottomWave {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  bottom: 0;
+}
+.bottomWave svg {
+  display: block;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 40px 0;
+}
+.heading {
+  font-size: 28px;
+}
+.contact {
+  font-size: 24px;
+  color: var(--primaryColor);
+  font-weight: 500;
+}
+.link {
+  font-size: 24px;
+  color: var(--primaryColor);
+  font-weight: 600;
+}
